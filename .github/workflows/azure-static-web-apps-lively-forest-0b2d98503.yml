@@ -47,7 +47,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env:
           DISABLE_NODEJS_BUILD: true
-          HUGO_VERSION: "0.152.2"
+          HUGO_VERSION: "0.146.0"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
