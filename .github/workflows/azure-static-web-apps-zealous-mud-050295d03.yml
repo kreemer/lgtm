@@ -15,6 +15,12 @@ jobs:
         with:
           submodules: true
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest'
+          extended: true
+
       - name: Install SWA CLI
         run: npm install -g @azure/static-web-apps-cli
 

@@ -3,8 +3,7 @@
   "configurations": {
     "lgtm": {
       "appLocation": ".",
-      "outputLocation": "build",
-      "appBuildCommand": "./generate.sh"
+      "outputLocation": "public"
     }
   }
 }
