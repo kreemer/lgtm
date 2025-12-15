@@ -1,0 +1,16 @@
+{
+  "images": [
+    {{- $files := readDir "/static" -}}
+    {{ $len := (len $files) }}
+    {{ range $index, $file := $files }}
+    {{- if (and (ne (substr $file.Name 0 1) "_") (not $file.IsDir)) -}}
+    "{{ $file.Name }}"
+    {{- if ne (add $index 1) $len -}}
+    ,
+    {{- end -}}
+
+
+    {{- end -}}
+    {{ end }}
+  ]
+}
